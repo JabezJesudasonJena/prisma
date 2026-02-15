@@ -1,0 +1,33 @@
+First download the prisma 
+    -- https://www.prisma.io/docs/getting-started/prisma-orm/quickstart/prisma-postgres
+    -- https://www.prisma.io/docs/postgres/getting-started
+
+and go to the get started and do the steps 
+
+-- lib/prisma.ts
+    It is the ORM  -- menaing it acts as a brifge between teh db and the code
+
+schema should be defined in -- prisma/schema.prisma
+    There we create tables/schema using model keyword 
+    after that migrate the schema
+    by using the cmd 
+        - [ npx prisma migrate dev --name init ]
+        if face conflict perform
+            
+
+To run and save the schemas use 
+    -> npx prisma generate
+        [ Used to create and gen the schemas ]
+
+add the lib folder for the bridge
+
+create a new ts file to add the code to add QUERIES 
+
+there we do 
+    1. Import the prisma ORM from lib
+    2. main function = 
+        In this function all the queries willl be There
+            "Can perform the add edit and delete queries too"
+    
+    3. To catch errors
+        use some basic error handling techniques

@@ -13,7 +13,7 @@ schema should be defined in -- prisma/schema.prisma
     by using the cmd 
         - [ npx prisma migrate dev --name init ]
         if face conflict perform
-            
+
 
 To run and save the schemas use 
     -> npx prisma generate
@@ -31,3 +31,5 @@ there we do
     
     3. To catch errors
         use some basic error handling techniques
+
+    DB URL = DATABASE_URL="postgresql://postgres:123@localhost:5433/prisma"
